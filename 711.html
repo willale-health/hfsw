@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(250, 250, 250);
+    }
+
+    .header {
+        width: 100vw;
+        background: #007FFF;
+        background: linear-gradient(90deg, rgba(0, 127, 255, 1) 0%, rgba(42, 82, 190, 1) 100%);
+    }
+
+    .header div {
+        padding: 20px;
+    }
+
+    .header a {
+        color: rgb(220, 220, 220);
+        text-decoration: none;
+    }
+
+    .header h2 {
+        display: flex;
+        justify-content: bottom;
+        color: rgb(220, 220, 220);
+        font-family: Anton;
+
+    }
+
+    .header h1 {
+        font-family: Anton;
+        color: rgb(220, 220, 220);
+        margin: 9px;
+
+    }
+
+    #nav {
+        background-color: black;
+        border-bottom: 2px solid #007FFF;
+    }
+
+    #nav div {
+        padding: 8px 15px;
+    }
+
+    .TITLEblog {
+        justify-content: left;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .OSTDisc {
+        position: fixed;
+        bottom: 20px;
+        right: 40px;
+        width: 400px;
+        z-index: 1000;
+    }
+
+
+
+
+
+    .container p {
+        font-size: 25px;
+        width: 800px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .container h1 {
+        font-size: 45px;
+        width: 800px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+
+    }
+
+    @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Anton';
+        font-style: normal;
+        font-weight: 400;
+        src: url('anton-v27-latin-regular.woff2') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+
+    .container img {
+        margin-top: 21px;
+
+    }
+
+    table {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+    }
+
+    .tabletskbr {
+        align-content: center;
+    }
+
+    #lil p {
+        font-size: 15px;
+    }
+</style>
+
+
+
+<div class="header">
+    <div style="min-width: 1400px; margin: 0 auto;">
+        <h1 style="margin-top: 0;"><a style="height: 1px;">
+                <a href="https://discord.gg/62CCRnmED8">Discord |
+                    <a href="https://www.tiktok.com/@hexarvenia">TikTok |
+                        <a href="https://www.youtube.com/@skobeloff00747">YouTube |
+                            <a href="https://github.com/willale-health/">GitHub |
+                                <a href="Hfsw.html">Home </a></h1>
+        </h2>
+
+    </div>
+</div>
+
+<body>
+
+
+
+    <div class="container">
+        <img src="7title.png">
+        &emsp;
+
+        <p>so many of yall liked my retro Windows 7 style setup on my main Windows 11 machine... to show my gratitude
+            for yall,
+            i'll be
+            going
+
+            over how i achieved that classic frutiger aero look everyones been going crazy for...
+        </p>
+
+
+        <img src="W7mainrig.png" width="800px" alt="this that look...">
+        <blockquote>
+
+        </blockquote>
+        <h1>REQUIRED TOOLS (with provided download links)</h1>
+        &emsp;
+        <table style="width: 913px; height: 110px;">
+            <tbody>
+                <tr>
+                    <td style="width: 157.233px;"> NAME</td>
+                    <td style="width: 188.767px;"> DESCRIPTION</td>
+                    <td style="width: 260px;"> DOWNLOAD LINK</td>
+                </tr>
+                <tr>
+                    <td style="width: 157.233px;"> Windhawk</td>
+                    <td style="width: 188.767px;"> Required for changing the look of the taskbar</td>
+                    <td style="width: 260px;">
+                        <a href="https://www.windhawk.net/" target="_blank"> Download link (windhawk.net) </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 157.233px;">OpenShell</td>
+                    <td style="width: 188.767px;"> Required for changing the look of the start menu</td>
+                    <td style="width: 260px;">
+                        <a href="https://github.com/Open-Shell/Open-Shell-Menu/releases/tag/v4.4.198/" target="_blank">
+                            Download link (GitHub repository) </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 157.233px;">Original Windows 7 Icond (Virtualcustoms)</td>
+                    <td style="width: 188.767px;"> Required for changing the look of the sysyem icons</td>
+                    <td style="width: 260px;">
+                        <a href="https://virtualcustoms.net/showthread.php/40369-Original-Windows-7-Icons"
+                            target="_blank">
+                            Download link (virtualcustoms.net) </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- DivTable.com -->
+        &emsp;
+        <h1>STEP NO.1: WINDHAWK </h1>
+        &emsp;
+        <p>as i have already mentioned, windhawk is a program that lets you change the look of the taskbar to almost
+            perfectly match the original Windows
+            aero look, with the only downside being that it needs an internet connection or it'll look buggy...
+        </p>
+
+        <img src="taskbar.png" width="800px" alt="Image alt text metadata.">
+        <blockquote>
+            <p style="font-size: 20px;">"<i>almost 1:1..."</i></p>
+        </blockquote>
+        &emsp;
+        <p>first and foremost, run the installer, accept the UAC window, and let the installer handle the heavy
+            lifting
+        </p>
+        <img src="w1.png" width="800px" alt="Image alt text metadata.">
+        <blockquote>
+            <p style="font-size: 20px;"><i>"STEP 1. Run the installer once downloaded"</i></p>
+        </blockquote>
+        <blockquote>
+            <p style="font-size: 20px;"><i>"STEP 2. Make sure that the Standard Installation option is
+                    toggled."<div id="lil">
+                        <p>You will need to press "Yes" in the UAC window.</p>
+                    </div></i></p>
+        </blockquote>
+        <blockquote>
+            <p style="font-size: 20px;"><i>"STEP 3. Just hit Next. No more no less is needed."</i></p>
+        </blockquote>
+        <blockquote>
+            <p style="font-size: 20px;"><i>"STEP 4. Leaving the destination folder completely
+                    default is okay unless you
+                    really need to change it"</i></p>
+        </blockquote>
+        &emsp;
+        <p>shortly after the initial install, the program itself should launch automatically...
+            take the next steps with
+            ease and your Windows 11 will slowly start
+            looking like the long desired Windows 7 style that I promised. &emsp;
+        </p>
+        <p>once the program launches, you need to install the main taskbar styler mod and tweak
+            it, otherwise it will
+            look like a hot mess... &emsp;
+        </p>
+
+        <img src="w2.png" width="800px" alt="Image alt text metadata.">
+        <blockquote>
+            <blockquote>
+                <p style="font-size: 20px;"><i>STEP NO. 1: On the homepage, hit Browse for mods
+                        .</i>
+                </p>
+                <p style="font-size: 20px;"><i>STEP NO. 2: Find the taskbar styler modification,
+                        press Details,
+                        then hit the Install button.</i>
+                </p>
+                <p style="font-size: 20px;"><i>STEP NO. 3: Accept Risk and Install (worry not,
+                        all of the mods by m417z
+                        are 100% safe and free from malicious code.)</i>
+                </p>
+                &emsp;
+
+                <p>now let's get to the tweaking to finish the taskbar mod for once and for
+                    all... these steps are SUPER
+                    IMPORTANT so lock tf in...&emsp;
+                </p>
+                <img src="w3.png" width="800px" alt="Image alt text metadata.">
+                <p style="font-size: 20px;"><i>STEP NO. 1: On the page for the taskbar styler,
+                        hit Settings.</i>
+                </p>
+                <p style="font-size: 20px;"><i>STEP NO. 2: Expand the Themes menu, scroll down
+                        untill you find the
+                        Windows7 theme.</i>
+                </p>
+                &emsp;
+
+                <p>now, once these steps are complete, the taskbar looks completely off due to
+                    the default Windows
+                    settings.
+                    worry not as this can be completely eliminated
+                    in the settings app!&emsp;
+                </p>
+                &emsp;
+                <img src="wmisc.png" width="800px" alt="Image alt text metadata.">
+                <blockquote>
+                    <p style="font-size: 20px;"><i>"bradar wat is this"</i></p>
+
+                </blockquote>
+                <img src="w4.png" width="800px" alt="Image alt text metadata.">
+                <blockquote>
+                    <p style="font-size: 20px;"><i>STEP NO. 1: Go to Search and type in
+                            "Taskbar settings" and
+                            proceed.</i>
+                    </p>
+                    <p style="font-size: 20px;"><i>STEP NO. 2: Hide the Search box, as that
+                            feature is not available in
+                            Windows 7.</i>
+                    </p>
+                    <p style="font-size: 20px;"><i>STEP NO. 3: Change the taskbar alignment
+                            to the left side, as it is
+                            like
+                            that on Windows 7.</i>
+                    </p>
+                    <p style="font-size: 20px;"><i>STEP NO. 4: Turn of Task view, as that
+                            feature is not available in
+                            Windows 7.</i>
+                    </p>
+
+                    <p>if done correctly , your taskbar should look way cleaner, but the
+                        icon sizes are still a little
+                        off... worry not! we can fix that using the <strong>taskbar height
+                            and icon size
+                            mod&emsp;
+                    </p>
+                    <img src="w5.png" width="800px" alt="Image alt text metadata.">
+                    <blockquote>
+                        <blockquote>
+                            <p style="font-size: 20px;"><i>STEP NO. 1: On the homepage, hit
+                                    Browse for mods .</i>
+                            </p>
+                            <p style="font-size: 20px;"><i>STEP NO. 2: Find the taskbar
+                                    height and icon size
+                                    modification, press
+                                    Details,
+                                    then hit the Install button.</i>
+                            </p>
+                            <p style="font-size: 20px;"><i>STEP NO. 3: Accept Risk and
+                                    Install (worry not, all of the
+                                    mods by m417z
+                                    are 100% safe and free from malicious code.)</i>
+                            </p>
+                            &emsp;
+                            <p>once installed, we need to tweak the sizes...&emsp;
+                            </p>
+                            <img src="w6.png" width="800px" alt="Image alt text metadata.">
+                            &emsp;
+
+
+                            <div class="tabletskbr">
+
+
+                                <table style="height: 283px; width: 297.75px;">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 220px;">SETTING</td>
+                                            <td style="width: 73.75px;">VALUE</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 220px;">Taskbar height</td>
+                                            <td style="width: 73.75px;">45</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 220px;">Icon size</td>
+                                            <td style="width: 73.75px;">27</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 220px;">Taskbar button width
+                                            </td>
+                                            <td style="width: 73.75px;">50</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 220px;">Small icon size</td>
+                                            <td style="width: 73.75px;">16</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 220px;">Small taskbar button
+                                                width</td>
+                                            <td style="width: 73.75px;">32</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- DivTable.com -->
+                            &emsp;
+                            <p>and <strong>voilla! you have successfully recreated
+                                    the classic Windows 7
+                                    taskbar style
+                                    using
+                                    Windhawk!</p>
+                            <p></p>
+                            &emsp;
+
+
+
+                        </blockquote>
